@@ -1,10 +1,10 @@
-FROM python:3.9-slim
+FROM python:3.12-slim
 
-WORKDIR /app
+WORKDIR /bot
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY bot.py bot.py
+COPY bot/ .
 
-CMD ["python", "bot.py"]
+CMD ["python", "main.py"]

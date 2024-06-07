@@ -7,3 +7,5 @@ services:
       - ./data:/data
     environment:
       - TOKEN=${TOKEN}
+      - DOWNLOAD_PATH=/data 
+      - DOWNLOAD_TIMEOUT=600
