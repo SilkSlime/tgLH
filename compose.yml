@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  telegram_bot:
+    build: .
+    volumes:
+      - ./data:/data
+    environment:
+      - TOKEN=${TOKEN}
